@@ -13,16 +13,63 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <header class="header">Header</header>
-        <aside class="aside aside-2">links</aside>
-        <article class="main">
+    <!-- <div class="wrapper"> -->
+      <div class="box">
+        <nav class="topnav row header" id="myTopnav">
+            <header class="header"><a href="#home" class="active">A-Maze-in Challenge</a></header>
+            <a href="#create">Create</a>
+            <a href="#load">Load</a>
+            <a href="#save">Save</a>
+            <a href="javascript:void(0);" class="icon" onclick="navSmall()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <div class="row section">
+        <b>section</b> (fixed height)
+          <i id="mazePropertiesBtn" class="fa-solid fa-arrows-rotate"></i>
+        </div>
+           
+          <div class="row content">
+            <p>
+              <b>content</b>
+              (fills remaining space)
+            </p>
+          </div>
+          <div class="row section">
+            <p><b>section</b> (fixed height)</p>
+          </div>
+        </div>
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+        <!-- <article class="main">
           <p>content</p>  
         </article>
-        <aside class="aside aside-1">tools</aside>
+        <aside class="aside aside-1">links</aside>
+        <aside class="aside aside-2">tools</aside>
         <footer class="footer">Footer</footer>
-      </div>
+      </div> -->
 
+      <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 
