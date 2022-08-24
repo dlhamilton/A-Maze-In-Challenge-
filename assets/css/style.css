@@ -1,49 +1,10 @@
-/* *{
+* {
   padding: 0;
   border: 0;
   margin:0;
   box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    text-align: center; 
-    height: 100%;
-    overflow:hidden;
-  }
-  body{
-    height: 100vh;
-  }
-  
-  .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
-  }
-
-  .header {
-    background: tomato;
-    padding: 0 !important;
-  }
-  
-  .footer {
-    background: lightgreen;
-  }
-  
-  .main {
-    text-align: left;
-    background: deepskyblue;
-    height: 80%;
-  }
-  
-  .aside-1 {
-    background: gold;
-  }
-  
-  .aside-2 {
-    background: hotpink;
-  }
-*/
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -74,20 +35,7 @@
   .topnav .icon {
     display: none;
   }
-  
-/*
-  @media all and (min-width: 600px) {
-    .aside { flex: 1 0 0; }
-  }
 
-  @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-    .aside-2 { order: 3; }
-    .footer  { order: 4; }
-  }
-*/
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -122,11 +70,11 @@ body {
   height: 100%;
 }
 
-.box .row {
+.box .contenRow{
   border: 1px dotted grey;
 }
 
-.box .row.header {
+.box .contenRow.header {
   flex: 0 1 auto;
   /* The above is shorthand for:
   flex-grow: 0,
@@ -135,11 +83,11 @@ body {
   */
 }
 
-.box .row.content {
+.box .contenRow.content {
   flex: 1 1 auto;
 }
 
-.box .row.section {
+.box .contenRow.section {
   flex: 0 1 4vh;
 }
 
@@ -212,3 +160,40 @@ body {
   background-color: #5cb85c;
   color: white;
 }
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+              display: block;
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+#errorMazeGenerate{
+  color:red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.inputBox{
+border: 2px solid black;
+padding:1px;
+} 
